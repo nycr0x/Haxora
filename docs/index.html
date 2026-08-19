@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Haxora — HaxBall için yeni nesil masaüstü istemcisi</title>
+<meta name="description" content="Haxora, HaxBall deneyimini daha hızlı ve kişiselleştirilebilir hâle getiren masaüstü istemcisi. Arkadaş listesi, özel mesajlaşma, oda istatistikleri ve gelişmiş oyun ayarları." />
+<link rel="icon" type="image/png" href="./Haxora_Icon.png" />
+
+<meta property="og:title" content="Haxora — HaxBall masaüstü istemcisi" />
+<meta property="og:description" content="Arkadaş listesi, özel mesajlaşma, oda istatistikleri ve gelişmiş oyun ayarları." />
+<meta property="og:image" content="./Haxora_Icon.png" />
+<meta property="og:type" content="website" />
+
+<style>
+/* Tasarım dili uygulamanınkiyle aynı: yakın-siyah zemin, tebeşir beyazı metin,
+   tek vurgu rengi. Dış font ya da betik yok — sayfa tek dosya. */
+:root {
+  --bg: #0b0e12;
+  --panel: #13171e;
+  --panel-2: #171c24;
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text: #f1f5f9;
+  --dim: #98a4b3;
+  --faint: #6b7787;
+  --accent: #4f8fbd;
+  --accent-soft: rgba(79, 143, 189, 0.14);
+  --font: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(900px 480px at 50% -10%, rgba(79, 143, 189, 0.16), transparent 70%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); }
+
+.wrap { width: min(1040px, calc(100% - 40px)); margin: 0 auto; }
+
+/* ------------------------------------------------------------------ üst bar */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--border);
+  background: rgba(11, 14, 18, 0.86);
+  backdrop-filter: blur(10px);
+}
+
+.bar { display: flex; min-height: 62px; align-items: center; gap: 11px; }
+.bar img { width: 32px; height: 32px; border-radius: 50%; }
+.bar b { font-size: 15px; letter-spacing: 0.08em; }
+.bar .grow { flex: 1; }
+
+.bar a {
+  padding: 7px 12px;
+  border-radius: 8px;
+  color: var(--dim);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.bar a:hover { background: rgba(255, 255, 255, 0.07); color: var(--text); }
+
+/* -------------------------------------------------------------------- hero */
+
+.hero { padding: 78px 0 62px; text-align: center; }
+.hero img { width: 92px; height: 92px; border-radius: 50%; box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5); }
+
+.hero h1 {
+  margin: 22px 0 0;
+  font-size: clamp(34px, 6vw, 52px);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.hero p {
+  max-width: 620px;
+  margin: 16px auto 0;
+  color: var(--dim);
+  font-size: 17px;
+}
+
+.cta { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 32px; gap: 12px; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 22px;
+  border: 1px solid var(--border-strong);
+  border-radius: 11px;
+  background: var(--panel-2);
+  color: var(--text);
+  font-size: 14.5px;
+  font-weight: 600;
+  gap: 10px;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s, transform 0.15s;
+}
+
+.btn:hover { border-color: var(--accent); background: var(--panel); transform: translateY(-1px); }
+
+.btn.primary { border-color: transparent; background: #fff; color: #0b0e12; }
+.btn.primary:hover { background: #dfe6ee; }
+.btn svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+.meta { margin-top: 14px; color: var(--faint); font-size: 12.5px; }
+.meta code { color: var(--dim); font-family: var(--mono); font-size: 11.5px; }
+
+/* ---------------------------------------------------------------- bölümler */
+
+section { padding: 58px 0; border-top: 1px solid var(--border); }
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 25px;
+  letter-spacing: -0.01em;
+}
+
+.lead { max-width: 640px; margin: 0 0 30px; color: var(--dim); }
+
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(266px, 1fr)); }
+
+.card {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--panel);
+}
+
+.card h3 { margin: 0 0 7px; font-size: 15.5px; }
+.card p { margin: 0; color: var(--dim); font-size: 13.5px; }
+
+.card .ico {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 13px;
+  place-items: center;
+  border: 1px solid var(--border-strong);
+  border-radius: 9px;
+  background: var(--accent-soft);
+  font-size: 16px;
+}
+
+/* ------------------------------------------------------------ kurulum / not */
+
+ol.steps { margin: 0; padding-left: 20px; color: var(--dim); }
+ol.steps li { margin-bottom: 9px; }
+ol.steps b { color: var(--text); }
+
+.note {
+  display: flex;
+  padding: 15px 17px;
+  border: 1px solid var(--border-strong);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  background: var(--panel);
+  color: var(--dim);
+  font-size: 13.5px;
+  gap: 12px;
+}
+
+.note b { color: var(--text); }
+
+/* --------------------------------------------------------------- notlar */
+
+#notes {
+  max-height: 320px;
+  padding: 17px 19px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: var(--panel);
+  color: var(--dim);
+  font-size: 13.5px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+/* ------------------------------------------------------------------- alt */
+
+footer {
+  padding: 34px 0 46px;
+  border-top: 1px solid var(--border);
+  color: var(--faint);
+  font-size: 13px;
+  text-align: center;
+}
+
+footer .discord {
+  display: inline-block;
+  margin-top: 9px;
+  padding: 5px 13px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+
+@media (max-width: 620px) {
+  .hero { padding: 52px 0 44px; }
+  .bar a.hide-sm { display: none; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <img src="./Haxora_Icon.png" alt="" />
+    <b>HAXORA</b>
+    <span class="grow"></span>
+    <a href="#ozellikler" class="hide-sm">Özellikler</a>
+    <a href="#kurulum" class="hide-sm">Kurulum</a>
+    <a href="#surum">Sürüm notları</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <img src="./Haxora_Icon.png" alt="Haxora" />
+    <h1>HaxBall, hak ettiği istemciyle.</h1>
+    <p>
+      Arkadaş listesi, özel mesajlaşma, oda istatistikleri ve gerçekten
+      kullanışlı oyun ayarları. Kurulum yok — indir, çalıştır.
+    </p>
+
+    <div class="cta">
+      <a class="btn primary" id="download" href="https://github.com/nycr0x/Haxora/releases/latest">
+        <svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>
+        <span id="downloadLabel">Windows için indir</span>
+      </a>
+      <a class="btn" href="https://github.com/nycr0x/Haxora/releases">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+        Tüm sürümler
+      </a>
+    </div>
+
+    <p class="meta" id="meta">Sürüm bilgisi alınıyor…</p>
+  </div>
+
+  <section id="ozellikler">
+    <div class="wrap">
+      <h2>Neler var</h2>
+      <p class="lead">
+        Hepsi HaxBall'ın kendi kurallarına dokunmadan çalışır; rakiplerin
+        oyununu değiştiren hiçbir şey yok.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="ico">👥</div>
+          <h3>Arkadaş listesi</h3>
+          <p>Kimin çevrimiçi olduğunu, hangi odada oynadığını gör; tek tıkla yanına katıl.</p>
+        </div>
+        <div class="card">
+          <div class="ico">💬</div>
+          <h3>Özel mesajlaşma</h3>
+          <p>Arkadaşlarınla oyun dışında da yazış. Çevrimdışıyken gönderdiğin mesaj bekler.</p>
+        </div>
+        <div class="card">
+          <div class="ico">📊</div>
+          <h3>Oda istatistikleri</h3>
+          <p>Gol, asist, galibiyet — hangi odada ne yaptığın oda oda kaydedilir.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🖕</div>
+          <h3>Avatar tepkileri</h3>
+          <p>Bir tuşa emoji ata; basılı tuttuğun sürece avatarın o emoji olur.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🔇</div>
+          <h3>Yerel susturma</h3>
+          <p>Rahatsız eden oyuncuyu yalnızca kendinde sustur. Yönetici olman gerekmez, karşı taraf bilmez.</p>
+        </div>
+        <div class="card">
+          <div class="ico">⚡</div>
+          <h3>Kare hızı denetimi</h3>
+          <p>Ekranınla senkron ya da sınırsız. Sınırsızda tavanı ölçüme göre kendisi belirler.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🎨</div>
+          <h3>Görünüm ayarları</h3>
+          <p>Top şekli ve rengi, saha renkleri, takım formaları, skorbord tasarımı — hepsi yalnızca sende.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🎯</div>
+          <h3>Antrenman ve kayıt</h3>
+          <p>Tek başına şut çalış, kendi sahanı yükle, maç kayıtlarını sonradan izle.</p>
+        </div>
+        <div class="card">
+          <div class="ico">☁️</div>
+          <h3>Ayarların seninle gelir</h3>
+          <p>Hesap açarsan profillerin, tuş atamaların ve tercihlerin diğer bilgisayarında da hazır.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kurulum">
+    <div class="wrap">
+      <h2>Kurulum</h2>
+      <p class="lead">Kurulum sihirbazı yok, yönetici izni yok, kayıt defterine hiçbir şey yazılmaz.</p>
+
+      <ol class="steps">
+        <li><b>Haxora.exe</b> dosyasını indir.</li>
+        <li>Çift tıkla. İlk açılışta dosyalarını geçici bir klasöre çıkarır, bu normal.</li>
+        <li>Karşılama ekranında temanı ve oyuncu adını seç. Hesap açmak <b>isteğe bağlı</b>.</li>
+      </ol>
+
+      <div class="note" style="margin-top: 24px">
+        <span>⚠️</span>
+        <div>
+          <b>Windows SmartScreen uyarısı çıkabilir.</b>
+          Derleme kod imzalı değil; imzalama sertifikası ücretli olduğu için henüz alınmadı.
+          Uyarıda <b>Daha fazla bilgi → Yine de çalıştır</b> diyebilirsin. Dosyanın
+          doğruluğundan emin olmak istersen sürüm notlarındaki SHA256 değerini
+          <code>Get-FileHash Haxora.exe</code> çıktısıyla karşılaştır.
+        </div>
+      </div>
+
+      <div class="note" style="margin-top: 14px">
+        <span>🔒</span>
+        <div>
+          <b>Hesap zorunlu değil.</b> Haxora hesabı yalnızca arkadaş listesi,
+          özel mesajlaşma ve istatistikler için gerekiyor. Açmazsan istemcinin
+          geri kalanı eksiksiz çalışır.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="surum">
+    <div class="wrap">
+      <h2>Sürüm notları</h2>
+      <p class="lead" id="notesTitle">Son sürüm alınıyor…</p>
+      <div id="notes">…</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Haxora · Created by nycrox</div>
+    <div class="discord">discord: nycrox</div>
+    <div style="margin-top: 14px">
+      <a href="https://github.com/nycr0x/Haxora">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* İndirme düğmesi son sürümü GitHub'dan kendisi buluyor. Böylece yeni sürüm
+   çıkarmak = GitHub'da Release yayınlamak; siteye hiç dokunmuyorsun.
+   İstemcinin güncelleme kontrolü de aynı ucu okuyor. */
+(function () {
+  var REPO = "nycr0x/Haxora";
+
+  var download = document.getElementById("download");
+  var label = document.getElementById("downloadLabel");
+  var meta = document.getElementById("meta");
+  var notes = document.getElementById("notes");
+  var notesTitle = document.getElementById("notesTitle");
+
+  function mb(bytes) { return (bytes / 1048576).toFixed(1) + " MB"; }
+
+  function fail(reason) {
+    meta.textContent = "Sürüm bilgisi alınamadı — düğme sürüm sayfasına götürür.";
+    notesTitle.textContent = "Sürüm notlarına GitHub'dan bakabilirsin.";
+    notes.textContent = reason || "";
+  }
+
+  fetch("https://api.github.com/repos/" + REPO + "/releases/latest", {
+    headers: { Accept: "application/vnd.github+json" },
+  })
+    .then(function (response) {
+      if (!response.ok) throw new Error("GitHub " + response.status);
+      return response.json();
+    })
+    .then(function (release) {
+      var version = String(release.tag_name || "").replace(/^v/i, "");
+      var assets = Array.isArray(release.assets) ? release.assets : [];
+      var exe = assets.filter(function (a) { return /\.exe$/i.test(a.name || ""); })[0];
+
+      if (exe) {
+        download.href = exe.browser_download_url;
+        label.textContent = "Haxora " + version + " indir";
+      }
+
+      var published = release.published_at
+        ? new Date(release.published_at).toLocaleDateString("tr-TR", {
+            day: "numeric", month: "long", year: "numeric",
+          })
+        : "";
+
+      meta.innerHTML = "Windows 64-bit · " +
+        (exe ? mb(exe.size) + " · " : "") +
+        (published ? published : "") +
+        (exe ? " · <code>" + exe.name + "</code>" : "");
+
+      /* Sürüm notundaki "[zorunlu]" işareti istemci için; ziyaretçiye gösterme. */
+      var body = String(release.body || "").replace(/\[zorunlu\]/gi, "").trim();
+      notesTitle.textContent = "Haxora " + version + (published ? " · " + published : "");
+      notes.textContent = body || "Bu sürüm için not yazılmamış.";
+    })
+    .catch(function (error) { fail(error.message); });
+})();
+</script>
+
+</body>
+</html>
