@@ -3,285 +3,416 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Haxora | Next-Gen HaxBall Client</title>
-<meta name="description" content="Haxora, HaxBall deneyimini daha hızlı, gelişmiş ve kişiselleştirilebilir hâle getiren yeni nesil masaüstü istemcisidir. Bağımsız bir projedir; HaxBall ile resmi bir bağı yoktur." />
-<link rel="icon" type="image/png" href="./site/Haxora_Icon.png">
+<title>Haxora — Next-Gen HaxBall Client | Ücretsiz Masaüstü İstemci</title>
+<meta name="description" content="Haxora, HaxBall için geliştirilmiş yeni nesil masaüstü client. Arkadaş listesi, özel mesajlaşma, oda istatistikleri ve kişiselleştirilebilir görünüm ayarları. Ücretsiz, kurulum gerektirmez." />
+<meta name="keywords" content="haxball client, next-gen haxball client, haxball istemci, haxball client indir, haxball indir, haxball masaüstü client, haxball pc client, haxora, haxball uygulaması" />
+<meta name="author" content="nycrox" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+<meta name="theme-color" content="#0a0d11" />
+<link rel="canonical" href="https://nycr0x.github.io/Haxora/" />
+<link rel="icon" type="image/png" href="./site/Haxora_Icon.png" />
+<link rel="apple-touch-icon" href="./site/Haxora_Icon.png" />
 
-<meta property="og:title" content="Haxora | Next-Gen HaxBall Client" />
-<meta property="og:description" content="Arkadaş listesi, özel mesajlaşma, oda istatistikleri ve gelişmiş oyun ayarları. Bağımsız bir projedir." />
-<meta property="og:image" content="./site/Haxora_Icon.png" />
+<meta property="og:site_name" content="Haxora" />
+<meta property="og:locale" content="tr_TR" />
 <meta property="og:type" content="website" />
+<meta property="og:url" content="https://nycr0x.github.io/Haxora/" />
+<meta property="og:title" content="Haxora — Next-Gen HaxBall Client" />
+<meta property="og:description" content="HaxBall için yeni nesil masaüstü client. Arkadaş listesi, özel mesajlaşma, oda istatistikleri ve görünüm ayarları. Ücretsiz." />
+<meta property="og:image" content="https://nycr0x.github.io/Haxora/site/Haxora_Icon.png" />
+<meta property="og:image:alt" content="Haxora HaxBall client logosu" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Haxora — Next-Gen HaxBall Client" />
+<meta name="twitter:description" content="HaxBall için yeni nesil masaüstü client. Arkadaş listesi, özel mesajlaşma, oda istatistikleri." />
+<meta name="twitter:image" content="https://nycr0x.github.io/Haxora/site/Haxora_Icon.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://nycr0x.github.io/Haxora/#app",
+      "name": "Haxora",
+      "alternateName": "Haxora Next-Gen HaxBall Client",
+      "description": "HaxBall için geliştirilmiş yeni nesil masaüstü client. Arkadaş listesi, özel mesajlaşma, oda istatistikleri, avatar tepkileri ve kişiselleştirilebilir görünüm ayarları sunar.",
+      "applicationCategory": "GameApplication",
+      "applicationSubCategory": "Game Client",
+      "operatingSystem": "Windows 10, Windows 11",
+      "url": "https://nycr0x.github.io/Haxora/",
+      "downloadUrl": "https://github.com/nycr0x/Haxora/releases/latest",
+      "installUrl": "https://github.com/nycr0x/Haxora/releases/latest",
+      "softwareHelp": "https://github.com/nycr0x/Haxora",
+      "inLanguage": "tr",
+      "image": "https://nycr0x.github.io/Haxora/site/Haxora_Icon.png",
+      "featureList": [
+        "Arkadaş listesi ve çevrimiçi durum",
+        "Özel mesajlaşma",
+        "Oda bazlı istatistikler",
+        "Avatar tepkileri",
+        "Yerel sohbet filtresi",
+        "Kare hızı denetimi",
+        "Görünüm ve saha özelleştirme",
+        "Antrenman modu ve maç kaydı",
+        "Bulut senkronizasyonu"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "nycrox",
+        "url": "https://github.com/nycr0x"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nycr0x.github.io/Haxora/#website",
+      "url": "https://nycr0x.github.io/Haxora/",
+      "name": "Haxora",
+      "inLanguage": "tr",
+      "about": { "@id": "https://nycr0x.github.io/Haxora/#app" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nycr0x.github.io/Haxora/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Haxora nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Haxora, HaxBall oynamak için kullanabileceğin bağımsız bir masaüstü client'tır. Oyunu tarayıcı yerine kendi istemcinden açar; arkadaş listesi, özel mesajlaşma, oda istatistikleri ve görünüm ayarları gibi ek özellikler getirir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "HaxBall client kurulumu nasıl yapılır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Haxora kurulum gerektirmez. GitHub sürüm sayfasından Haxora.exe dosyasını indirip çift tıklaman yeterlidir. İlk açılışta Windows güvenlik bildirimi çıkarsa Daha fazla bilgi ve ardından Yine de çalıştır seçeneğiyle devam edebilirsin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Haxora ücretli mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır, Haxora tamamen ücretsizdir. Hesap açmak da isteğe bağlıdır; hesap yalnızca arkadaş listesi, özel mesajlaşma ve istatistik gibi çevrimiçi özellikler için gerekir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Haxora oyunda avantaj sağlar mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Haxora bir hile aracı değildir. Oyunun fiziğine, kurallarına veya diğer oyuncuların deneyimine dokunmaz. Görünüm ayarları yalnızca senin ekranında geçerlidir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Haxora hangi işletim sistemlerinde çalışır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Haxora şu anda Windows 64-bit sistemler için yayınlanmaktadır."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
 <style>
-/* Uygulamanın tasarım belirteçleri birebir taşındı (examples_web/src/ui.css):
-   gece stadyumu — yakın-siyah zemin, tebeşir beyazı metin, tek vurgu rengi,
-   üst bar için ayrı "chrome" tonu. Dış font ya da CDN yok. */
 :root {
-  --bg-0: #090b0e;
-  --bg-1: #0f1318;
-  --bg-2: #151a21;
-  --panel: #13171e;
-  --panel-strong: #1c222b;
-  --panel-hover: #252d38;
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.16);
-  --text: #f1f5f9;
-  --text-dim: #94a3b8;
-  --text-faint: #64748b;
+  --bg-0: #0a0d11;
+  --bg-1: #0e1217;
+  --bg-2: #131820;
+  --panel: #12161d;
+  --panel-2: #171d25;
+  --panel-3: #1d242e;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-2: rgba(255, 255, 255, 0.13);
+  --text: #e8edf3;
+  --text-dim: #98a3b1;
+  --text-faint: #626d7b;
   --accent: #4f8fbd;
-  --accent-hi: #3979a7;
-  --accent-ink: #ffffff;
-  --accent-soft: rgba(79, 143, 189, 0.13);
-  --chrome: #244b68;
-  --chrome-border: #17374e;
+  --accent-2: #77b0d6;
+  --accent-soft: rgba(79, 143, 189, 0.11);
+  --red: #cf6157;
+  --blue: #5590c0;
+  --green: #5fa877;
   --radius: 10px;
-  --radius-sm: 4px;
-  --radius-lg: 16px;
+  --radius-sm: 6px;
   --font: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
   --mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
 }
 
 * { box-sizing: border-box; }
 
+html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
   background: var(--bg-0);
   color: var(--text);
-  font: 14px/1.6 var(--font);
+  font: 14px/1.65 var(--font);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
-a { color: var(--accent); }
-.wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+a { color: var(--accent-2); }
 
-/* ============================================================== üst bar
-   Uygulamadaki oda listesi üst barının aynısı: tam genişlik, düz, chrome
-   zemin, altında ince çizgi. */
+.wrap { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+
+section { padding: 74px 0; border-top: 1px solid var(--border); scroll-margin-top: 78px; }
+
+.eyebrow {
+  margin: 0 0 11px;
+  color: var(--text-faint);
+  font: 600 10.5px var(--mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+h2 { margin: 0 0 12px; font-size: clamp(21px, 2.5vw, 27px); font-weight: 650; letter-spacing: -0.02em; }
+
+.lead { max-width: 610px; margin: 0 0 32px; color: var(--text-dim); font-size: 14.5px; }
 
 .topbar {
   position: sticky;
   top: 0;
-  z-index: 20;
-  border-bottom: 1px solid var(--chrome-border);
-  background: var(--chrome);
-  color: #fff;
+  z-index: 40;
+  border-bottom: 1px solid transparent;
+  transition: background 0.25s, border-color 0.25s;
 }
 
-.topbar-inner { display: flex; min-height: 62px; align-items: center; gap: 10px; }
+.topbar.stuck {
+  border-bottom-color: var(--border);
+  background: rgba(10, 13, 17, 0.86);
+  backdrop-filter: saturate(130%) blur(12px);
+}
 
-.brand { display: flex; flex: 0 0 auto; align-items: center; gap: 10px; }
+.topbar-inner { display: flex; height: 66px; align-items: center; gap: 12px; }
+
+.brand { display: flex; flex: 0 0 auto; align-items: center; gap: 11px; color: inherit; text-decoration: none; }
 
 .brand-mark {
   display: grid;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   place-items: center;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.45);
+  border: 1px solid var(--border-2);
   border-radius: 50%;
   background: #fff;
 }
 
 .brand-mark img { width: 100%; height: 100%; object-fit: cover; }
-.brand-text { display: flex; flex-direction: column; line-height: 1.05; }
-.brand-text strong { font-size: 14px; letter-spacing: 0.08em; }
-.brand-text span { margin-top: 3px; color: rgba(255, 255, 255, 0.6); font-size: 10.5px; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.12; }
+.brand-text strong { font-size: 14px; font-weight: 650; letter-spacing: 0.13em; }
+.brand-text span { margin-top: 2px; color: var(--text-faint); font: 9.5px var(--mono); letter-spacing: 0.06em; }
 
 .grow { flex: 1; }
 
 .nav { display: flex; align-items: center; gap: 2px; }
 
 .nav a {
-  padding: 8px 11px;
-  border-radius: 9px;
-  color: rgba(255, 255, 255, 0.82);
+  padding: 9px 12px;
+  border-radius: 7px;
+  color: var(--text-dim);
   font: 600 12.5px var(--font);
   text-decoration: none;
   white-space: nowrap;
+  transition: color 0.16s, background 0.16s;
 }
 
-.nav a:hover { background: rgba(255, 255, 255, 0.1); color: #fff; }
-
-.nav .sep {
-  width: 1px;
-  height: 24px;
-  margin: 0 6px;
-  background: rgba(255, 255, 255, 0.16);
-}
+.nav a:hover { background: rgba(255, 255, 255, 0.05); color: var(--text); }
 
 .nav .cta-sm {
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: #fff;
-  color: var(--chrome);
-  font-weight: 600;
+  margin-left: 8px;
+  padding: 9px 16px;
+  border: 1px solid var(--border-2);
+  border-radius: 8px;
+  color: var(--text);
 }
 
-.nav .cta-sm:hover { background: rgba(255, 255, 255, 0.86); color: var(--chrome); }
-
-/* ================================================================== hero
-   Karşılama ekranının saha motifi: dikdörtgen saha, orta çizgi, santra
-   dairesi ve top. Uygulamayı açan herkes bunu tanır. */
+.nav .cta-sm:hover { border-color: var(--accent); background: var(--accent-soft); }
 
 .hero {
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
-  background: var(--chrome);
-  color: #fff;
+  background: linear-gradient(180deg, #101820 0%, var(--bg-0) 92%);
 }
 
-.pitch {
-  position: absolute;
-  inset: 26px -140px 26px 52%;
-  border: 1px solid rgba(255, 255, 255, 0.13);
-  border-radius: 8px;
-  opacity: 0.85;
-  pointer-events: none;
+.hero-inner {
+  position: relative;
+  display: grid;
+  align-items: center;
+  padding: 76px 0 84px;
+  gap: 54px;
+  grid-template-columns: 1fr 1fr;
 }
-
-.pitch i {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 38%;
-  width: 1px;
-  background: rgba(255, 255, 255, 0.13);
-}
-
-.pitch b {
-  position: absolute;
-  top: 50%;
-  left: 38%;
-  width: 190px;
-  height: 190px;
-  border: 1px solid rgba(255, 255, 255, 0.13);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.pitch s {
-  position: absolute;
-  top: 50%;
-  left: 38%;
-  width: 12px;
-  height: 12px;
-  border: 2px solid rgba(255, 255, 255, 0.82);
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.07);
-  transform: translate(-50%, -50%);
-}
-
-.hero-inner { position: relative; padding: 74px 0 78px; }
-.hero-copy { max-width: 560px; }
 
 .kicker {
-  margin: 0 0 13px;
-  color: rgba(255, 255, 255, 0.66);
-  font: 700 10px var(--mono);
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 20px;
+  padding: 5px 12px 5px 9px;
+  border: 1px solid var(--border-2);
+  border-radius: 6px;
+  color: var(--text-dim);
+  font: 600 10.5px var(--mono);
+  gap: 8px;
   letter-spacing: 0.13em;
+  text-transform: uppercase;
 }
+
+.kicker s { width: 5px; height: 5px; border-radius: 50%; background: var(--green); }
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(32px, 4.6vw, 48px);
-  letter-spacing: -0.035em;
-  line-height: 1.06;
+  font-size: clamp(33px, 4.6vw, 50px);
+  font-weight: 680;
+  letter-spacing: -0.038em;
+  line-height: 1.05;
 }
 
-.hero .sub {
-  max-width: 460px;
-  margin: 20px 0 0;
-  color: rgba(255, 255, 255, 0.74);
-  font-size: 14.5px;
-  line-height: 1.65;
-}
+.hero h1 span { display: block; color: var(--text-faint); font-weight: 500; }
 
-.badge {
-  display: inline-flex;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 5px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 999px;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 11px;
-  gap: 7px;
-}
+.hero .sub { max-width: 470px; margin: 22px 0 0; color: var(--text-dim); font-size: 15px; line-height: 1.72; }
 
-.badge s { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
-
-.cta { display: flex; flex-wrap: wrap; margin-top: 30px; gap: 10px; }
+.cta { display: flex; flex-wrap: wrap; margin-top: 30px; gap: 11px; }
 
 .btn {
   display: inline-flex;
   align-items: center;
-  height: 44px;
-  padding: 0 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 45px;
+  padding: 0 21px;
+  border: 1px solid var(--border-2);
   border-radius: var(--radius);
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
+  background: transparent;
+  color: var(--text);
   font: 600 13.5px var(--font);
-  gap: 9px;
+  gap: 10px;
   text-decoration: none;
-  transition: background 0.14s, border-color 0.14s;
+  transition: border-color 0.16s, background 0.16s;
 }
 
-.btn:hover { border-color: rgba(255, 255, 255, 0.38); background: rgba(255, 255, 255, 0.12); }
+.btn:hover { border-color: var(--border-2); background: rgba(255, 255, 255, 0.05); }
 
-.btn.primary { border-color: transparent; background: #fff; color: var(--chrome); }
-.btn.primary:hover { background: rgba(255, 255, 255, 0.86); color: var(--chrome); }
+.btn.primary { border-color: var(--accent); background: var(--accent); color: #0a1219; font-weight: 650; }
+.btn.primary:hover { border-color: var(--accent-2); background: var(--accent-2); }
 
-.btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.btn svg { width: 17px; height: 17px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
 
-.hero-meta { margin: 15px 0 0; color: rgba(255, 255, 255, 0.5); font-size: 12px; }
-.hero-meta code { color: rgba(255, 255, 255, 0.66); font: 11px var(--mono); }
+.hero-meta { margin: 17px 0 0; color: var(--text-faint); font-size: 12px; }
+.hero-meta code { color: var(--text-dim); font: 11px var(--mono); }
 
-/* ============================================================= bölümler */
-
-section { padding: 62px 0; border-top: 1px solid var(--border); }
-section:first-of-type { border-top: 0; }
-
-.section-title {
-  margin: 0 0 7px;
-  color: var(--text-faint);
-  font: 700 11px var(--font);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.shot {
+  position: relative;
+  border: 1px solid var(--border-2);
+  border-radius: 12px;
+  background: var(--panel);
+  box-shadow: 0 30px 70px -34px rgba(0, 0, 0, 0.9);
 }
 
-h2 { margin: 0 0 10px; font-size: 24px; letter-spacing: -0.015em; }
-.lead { max-width: 620px; margin: 0 0 30px; color: var(--text-dim); font-size: 14px; }
+.shot-bar {
+  display: flex;
+  align-items: center;
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel-2);
+  border-radius: 11px 11px 0 0;
+  gap: 7px;
+}
 
-.grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(272px, 1fr)); }
+.shot-bar i { width: 9px; height: 9px; border-radius: 50%; background: rgba(255, 255, 255, 0.14); }
+.shot-bar b { margin-left: 8px; color: var(--text-faint); font: 600 11px var(--mono); letter-spacing: 0.08em; }
+
+.shot-body { display: grid; grid-template-columns: 152px 1fr; }
+
+.shot-side { padding: 14px 12px; border-right: 1px solid var(--border); }
+
+.side-h { margin: 0 0 11px; color: var(--text-faint); font: 600 9.5px var(--mono); letter-spacing: 0.14em; text-transform: uppercase; }
+
+.fr { display: flex; align-items: center; margin-bottom: 3px; padding: 6px 7px; border-radius: 7px; gap: 8px; }
+.fr.hot { background: rgba(255, 255, 255, 0.04); }
+.fr i { display: grid; width: 20px; height: 20px; flex: 0 0 auto; place-items: center; border-radius: 50%; background: var(--panel-3); color: var(--text-dim); font: 600 9px var(--font); font-style: normal; }
+.fr span { flex: 1; color: var(--text-dim); font-size: 11.5px; }
+.fr s { width: 6px; height: 6px; border-radius: 50%; background: var(--text-faint); }
+.fr s.on { background: var(--green); }
+.fr.hot s.on { animation: blip 2.6s ease-out infinite; }
+
+@keyframes blip {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(95, 168, 119, 0.5); }
+  50% { box-shadow: 0 0 0 4px rgba(95, 168, 119, 0); }
+}
+
+.shot-main { padding: 14px 15px 16px; }
+
+.tabs { display: flex; margin-bottom: 13px; gap: 4px; }
+.tabs span { padding: 5px 10px; border-radius: 6px; color: var(--text-faint); font-size: 11px; }
+.tabs span.on { background: var(--accent-soft); color: var(--accent-2); }
+
+.room {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 9px 11px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--bg-2);
+  gap: 10px;
+  opacity: 0;
+  animation: slot 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.room:nth-child(2) { animation-delay: 0.35s; }
+.room:nth-child(3) { animation-delay: 0.45s; }
+.room:nth-child(4) { animation-delay: 0.55s; }
+.room:nth-child(5) { animation-delay: 0.65s; }
+.room:nth-child(6) { animation-delay: 0.75s; }
+
+@keyframes slot { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: none; } }
+
+.room em { flex: 0 0 auto; padding: 2px 6px; border: 1px solid var(--border); border-radius: 4px; color: var(--text-faint); font: 600 9px var(--mono); font-style: normal; }
+.room b { flex: 1; overflow: hidden; color: var(--text); font-size: 11.8px; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
+.room u { color: var(--text-dim); font: 10.5px var(--mono); text-decoration: none; }
+
+.bar { width: 34px; height: 3px; overflow: hidden; border-radius: 2px; background: rgba(255, 255, 255, 0.08); }
+.bar i { display: block; height: 100%; border-radius: 2px; background: var(--accent); }
+
+.strip { border-top: 1px solid var(--border); background: var(--bg-1); }
+.strip-inner { display: flex; flex-wrap: wrap; padding: 19px 0; gap: 13px 32px; }
+.fact { display: flex; align-items: center; color: var(--text-dim); font-size: 12.5px; gap: 9px; }
+.fact svg { width: 15px; height: 15px; fill: none; stroke: var(--text-faint); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.fact b { color: var(--text); font-weight: 600; }
+
+.grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 
 .card {
-  padding: 19px;
+  padding: 20px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--panel);
-  transition: border-color 0.14s, background 0.14s;
+  transition: border-color 0.18s, background 0.18s;
 }
 
-.card:hover { border-color: var(--border-strong); background: var(--panel-strong); }
-.card h3 { margin: 0 0 6px; font-size: 14.5px; }
-.card p { margin: 0; color: var(--text-dim); font-size: 13px; line-height: 1.55; }
+.card:hover { border-color: var(--border-2); background: var(--panel-2); }
+.card:hover .ico { color: var(--accent-2); }
+.card h3 { margin: 0 0 7px; font-size: 14.5px; font-weight: 620; }
+.card p { margin: 0; color: var(--text-dim); font-size: 13.2px; line-height: 1.6; }
 
-.card .ico {
-  display: grid;
-  width: 32px;
-  height: 32px;
-  margin-bottom: 13px;
-  place-items: center;
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-sm);
-  background: var(--accent-soft);
-  font-size: 15px;
-}
+.ico { display: block; margin-bottom: 14px; color: var(--text-faint); transition: color 0.18s; }
+.ico svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 
-/* --------------------------------------------------------------- kurulum */
+.split { display: grid; gap: 38px; grid-template-columns: 1.05fr 0.95fr; align-items: start; }
 
 .steps { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
 
@@ -294,7 +425,7 @@ h2 { margin: 0 0 10px; font-size: 24px; letter-spacing: -0.015em; }
   background: var(--panel);
   color: var(--text-dim);
   font-size: 13.5px;
-  gap: 13px;
+  gap: 14px;
 }
 
 .steps b { color: var(--text); }
@@ -305,253 +436,380 @@ h2 { margin: 0 0 10px; font-size: 24px; letter-spacing: -0.015em; }
   height: 24px;
   flex: 0 0 auto;
   place-items: center;
-  border-radius: 50%;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font: 700 12px var(--mono);
+  border: 1px solid var(--border-2);
+  border-radius: 6px;
+  color: var(--text-dim);
+  font: 600 11px var(--mono);
 }
 
 .note {
   display: flex;
-  margin-top: 12px;
+  margin-top: 11px;
   padding: 15px 17px;
   border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
   border-radius: var(--radius);
   background: var(--bg-2);
   color: var(--text-dim);
   font-size: 13px;
   gap: 12px;
-  line-height: 1.6;
+  line-height: 1.62;
 }
 
 .note b { color: var(--text); }
-.note code { color: var(--text); font: 11.5px var(--mono); }
+.note svg { width: 17px; height: 17px; flex: 0 0 auto; margin-top: 2px; fill: none; stroke: var(--text-faint); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 
-/* ---------------------------------------------------------- sürüm notları */
+.faq { display: grid; gap: 8px; }
 
-.release {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--panel);
-  overflow: hidden;
+.faq details { border: 1px solid var(--border); border-radius: var(--radius); background: var(--panel); }
+.faq details[open] { border-color: var(--border-2); }
+
+.faq summary {
+  display: flex;
+  align-items: center;
+  padding: 15px 18px;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13.6px;
+  font-weight: 600;
+  gap: 12px;
+  list-style: none;
 }
+
+.faq summary::-webkit-details-marker { display: none; }
+
+.faq summary::after {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  margin-left: auto;
+  border-right: 1.6px solid var(--text-faint);
+  border-bottom: 1.6px solid var(--text-faint);
+  content: "";
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform 0.22s ease;
+}
+
+.faq details[open] summary::after { transform: rotate(225deg) translate(-3px, -3px); }
+.faq p { margin: 0; padding: 0 18px 16px; color: var(--text-dim); font-size: 13.2px; line-height: 1.68; }
+
+.release { overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); background: var(--panel); }
 
 .release-head {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 13px 17px;
+  padding: 13px 18px;
   border-bottom: 1px solid var(--border);
-  background: var(--panel-strong);
-  gap: 10px;
+  background: var(--panel-2);
+  gap: 11px;
 }
 
-.release-head strong { font-size: 13.5px; }
+.release-head strong { font: 650 12.5px var(--mono); letter-spacing: 0.03em; }
 .release-head span { color: var(--text-faint); font-size: 11.5px; }
 
 .release-body {
   max-height: 330px;
-  padding: 17px;
+  padding: 18px;
   overflow: auto;
   color: var(--text-dim);
   font-size: 13px;
-  line-height: 1.65;
+  line-height: 1.7;
   white-space: pre-wrap;
 }
 
-/* ------------------------------------------------------------------- alt */
+.release-body::-webkit-scrollbar { width: 9px; }
+.release-body::-webkit-scrollbar-thumb { border: 3px solid var(--panel); border-radius: 9px; background: rgba(255, 255, 255, 0.14); }
 
-footer { padding: 34px 0 48px; border-top: 1px solid var(--border); }
+footer { padding: 38px 0 54px; border-top: 1px solid var(--border); background: var(--bg-1); }
 
-.foot {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px;
-}
-
+.foot { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .foot .who { color: var(--text-dim); font-size: 13px; }
+.foot a { color: var(--text-dim); font-size: 13px; text-decoration: none; }
+.foot a:hover { color: var(--text); }
 
-.foot .discord {
-  padding: 5px 12px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--bg-2);
-  color: var(--text-dim);
-  font: 600 11.5px var(--mono);
-}
+.chip { padding: 5px 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg-2); color: var(--text-dim); font: 600 11.5px var(--mono); }
 
-.disclaimer {
-  margin-top: 20px;
-  padding-top: 18px;
-  border-top: 1px solid var(--border);
-  color: var(--text-faint);
-  font-size: 11.5px;
-  line-height: 1.65;
-}
+.disclaimer { max-width: 780px; margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-faint); font-size: 11.5px; line-height: 1.7; }
 
-@media (max-width: 880px) {
-  .pitch { display: none; }
-  .hero-copy { max-width: none; }
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1); }
+.reveal.in { opacity: 1; transform: none; }
+
+.hero-copy > * { opacity: 0; animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+.hero-copy > :nth-child(1) { animation-delay: 0.04s; }
+.hero-copy > :nth-child(2) { animation-delay: 0.12s; }
+.hero-copy > :nth-child(3) { animation-delay: 0.2s; }
+.hero-copy > :nth-child(4) { animation-delay: 0.28s; }
+.hero-copy > :nth-child(5) { animation-delay: 0.36s; }
+
+.shot { opacity: 0; animation: rise 0.8s 0.22s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; }
+
+@media (max-width: 980px) {
+  .hero-inner { padding: 60px 0 66px; gap: 40px; grid-template-columns: 1fr; }
   .hero .sub { max-width: none; }
+  .split { grid-template-columns: 1fr; gap: 28px; }
+  section { padding: 58px 0; }
 }
 
 @media (max-width: 620px) {
-  .hero-inner { padding: 52px 0 56px; }
   .nav a.hide-sm { display: none; }
   .brand-text span { display: none; }
+  .shot-body { grid-template-columns: 1fr; }
+  .shot-side { display: none; }
+  .btn { width: 100%; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  .reveal, .hero-copy > *, .shot, .room { opacity: 1; transform: none; }
 }
 </style>
 </head>
 <body>
 
-<header class="topbar">
+<header class="topbar" id="topbar">
   <div class="wrap topbar-inner">
-    <div class="brand">
-      <div class="brand-mark"><img src="./site/Haxora_Icon.png" alt="" /></div>
-      <div class="brand-text">
+    <a class="brand" href="#top">
+      <span class="brand-mark"><img src="./site/Haxora_Icon.png" alt="Haxora HaxBall client simgesi" width="32" height="32" /></span>
+      <span class="brand-text">
         <strong>HAXORA</strong>
         <span>next-gen haxball client</span>
-      </div>
-    </div>
+      </span>
+    </a>
     <div class="grow"></div>
     <nav class="nav">
       <a href="#ozellikler" class="hide-sm">Özellikler</a>
       <a href="#kurulum" class="hide-sm">Kurulum</a>
+      <a href="#sss" class="hide-sm">S.S.S.</a>
       <a href="#surum" class="hide-sm">Sürüm notları</a>
-      <span class="sep"></span>
       <a class="cta-sm" href="#indir">İndir</a>
     </nav>
   </div>
 </header>
 
-<main>
+<main id="top">
   <div class="hero" id="indir">
-    <div class="pitch" aria-hidden="true"><i></i><b></b><s></s></div>
     <div class="wrap hero-inner">
       <div class="hero-copy">
-        <span class="badge"><s></s> Bağımsız proje — HaxBall'ın resmi ürünü değildir</span>
-        <p class="kicker">MASAÜSTÜ HAXORA</p>
-        <h1>Oyuna kendi tarzınla başla.</h1>
+        <p class="kicker"><s></s> Next-Gen HaxBall Client</p>
+        <h1>
+          Yeni nesil HaxBall client'ı.
+          <span>Oyun aynı, çevresi yepyeni.</span>
+        </h1>
         <p class="sub">
-          Haxora, HaxBall deneyimini daha hızlı, gelişmiş ve kişiselleştirilebilir
-          hâle getiren yeni nesil masaüstü istemcisidir. Kurulum yok — indir, çalıştır.
+          Haxora, HaxBall'ı kendi masaüstü istemcinden açar. Arkadaş listesi, özel
+          mesajlaşma, oda istatistikleri ve kişiselleştirilebilir görünüm ayarları
+          tek uygulamada. Kurulum yok, ücretsiz.
         </p>
 
         <div class="cta">
           <a class="btn primary" id="download" href="https://github.com/nycr0x/Haxora/releases/latest">
-            <svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>
             <span id="downloadLabel">Windows için indir</span>
           </a>
           <a class="btn" href="https://github.com/nycr0x/Haxora/releases">
-            <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
             Tüm sürümler
           </a>
         </div>
 
         <p class="hero-meta" id="meta">Sürüm bilgisi alınıyor…</p>
       </div>
+
+      <div class="shot" aria-hidden="true">
+        <div class="shot-bar">
+          <i></i><i></i><i></i>
+          <b>HAXORA</b>
+        </div>
+        <div class="shot-body">
+          <div class="shot-side">
+            <p class="side-h">Arkadaşlar</p>
+            <div class="fr hot"><i>DZ</i><span>deniz</span><s class="on"></s></div>
+            <div class="fr"><i>KA</i><span>kaan</span><s class="on"></s></div>
+            <div class="fr"><i>EM</i><span>emre</span><s class="on"></s></div>
+            <div class="fr"><i>SL</i><span>selin</span><s></s></div>
+            <div class="fr"><i>BR</i><span>burak</span><s></s></div>
+          </div>
+          <div class="shot-main">
+            <div class="tabs"><span class="on">Odalar</span><span>İstatistikler</span><span>Ayarlar</span></div>
+            <div class="room"><em>TR</em><b>Haxora Public · Big</b><u>18 ms</u><span class="bar"><i style="width:70%"></i></span></div>
+            <div class="room"><em>TR</em><b>3v3 Rekabet</b><u>24 ms</u><span class="bar"><i style="width:100%"></i></span></div>
+            <div class="room"><em>EU</em><b>Futsal Arena</b><u>41 ms</u><span class="bar"><i style="width:45%"></i></span></div>
+            <div class="room"><em>TR</em><b>Antrenman Odası</b><u>16 ms</u><span class="bar"><i style="width:25%"></i></span></div>
+            <div class="room"><em>EU</em><b>Classic 4v4</b><u>52 ms</u><span class="bar"><i style="width:85%"></i></span></div>
+            <div class="room"><em>TR</em><b>Gece Ligi</b><u>21 ms</u><span class="bar"><i style="width:60%"></i></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="wrap strip-inner">
+      <span class="fact"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 20h8"/></svg><b>Windows 64-bit</b></span>
+      <span class="fact"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Kurulum gerekmez</span>
+      <span class="fact"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5h5M9.5 14.5h5M12 7v10"/></svg>Ücretsiz</span>
+      <span class="fact"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 4.4-2.9 8.2-7 9-4.1-.8-7-4.6-7-9V7z"/><path d="M9.5 12l1.8 1.8 3.2-3.4"/></svg>Oyunun kurallarına dokunmaz</span>
+      <span class="fact"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 11-6.2-8.6"/><path d="M21 4v5h-5"/></svg>Uygulama içi güncelleme</span>
     </div>
   </div>
 
   <section id="ozellikler">
     <div class="wrap">
-      <p class="section-title">Özellikler</p>
-      <h2>Neler var</h2>
-      <p class="lead">
-        Hepsi HaxBall'ın kendi kurallarına dokunmadan çalışır. Görünüm ayarları
-        yalnızca sende geçerlidir; rakiplerin oyununu değiştiren hiçbir şey yok.
+      <p class="eyebrow reveal">Özellikler</p>
+      <h2 class="reveal">Bir HaxBall client'ından beklediğin her şey</h2>
+      <p class="lead reveal">
+        Haxora oyunun kendisine dokunmaz. Sunucuya giden hiçbir şey değişmez; buradaki
+        her ayar yalnızca senin ekranında ve senin konforun için çalışır.
       </p>
 
       <div class="grid">
-        <div class="card">
-          <div class="ico">👥</div>
+        <article class="card reveal">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M16 20v-1.5a3.5 3.5 0 00-3.5-3.5h-5A3.5 3.5 0 004 18.5V20"/><circle cx="10" cy="8" r="3.2"/><path d="M20 20v-1.5a3.5 3.5 0 00-2.6-3.4M15.5 5.2a3.2 3.2 0 010 6"/></svg></span>
           <h3>Arkadaş listesi</h3>
-          <p>Kimin çevrimiçi olduğunu ve hangi odada oynadığını gör; tek tıkla yanına katıl.</p>
-        </div>
-        <div class="card">
-          <div class="ico">💬</div>
+          <p>Kimin çevrimiçi olduğunu ve hangi odada oynadığını gör, tek tıkla yanına katıl.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M20 14a2 2 0 01-2 2H8l-4 4V6a2 2 0 012-2h12a2 2 0 012 2z"/><path d="M8.5 10h7"/></svg></span>
           <h3>Özel mesajlaşma</h3>
-          <p>Arkadaşlarınla oyun dışında da yazış. Çevrimdışıyken gönderilen mesaj bekler.</p>
-        </div>
-        <div class="card">
-          <div class="ico">📊</div>
+          <p>Arkadaşlarınla oyun dışında da yazış. Çevrimdışıyken gönderdiğin mesaj onları bekler.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
           <h3>Oda istatistikleri</h3>
-          <p>Gol, asist, galibiyet ve süre; hangi odada ne yaptığın oda oda kaydedilir.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🎭</div>
+          <p>Gol, asist, galibiyet ve süre. Hangi odada ne yaptığın oda oda kaydedilir.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5c2 1.6 5 1.6 7 0"/><path d="M9 9.5h.01M15 9.5h.01"/></svg></span>
           <h3>Avatar tepkileri</h3>
-          <p>Bir tuşa emoji ata; basılı tuttuğun sürece avatarın o emoji olur, bırakınca döner.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🔇</div>
-          <h3>Yerel susturma</h3>
-          <p>Rahatsız eden oyuncuyu yalnızca kendinde sustur. Yönetici olman gerekmez, karşı taraf bilmez.</p>
-        </div>
-        <div class="card">
-          <div class="ico">⚡</div>
+          <p>Bir tuşa emoji ata. Basılı tuttuğun sürece avatarın o emoji olur, bırakınca eskiye döner.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h6"/><path d="M16.5 14.5l4 4M20.5 14.5l-4 4"/></svg></span>
+          <h3>Sohbet filtresi</h3>
+          <p>Rahatsız eden bir oyuncunun mesajlarını yalnızca kendi ekranında gizle. Odada kimse etkilenmez.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="ico"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="12.5" rx="2"/><path d="M7 20h10"/><path d="M6.5 13.5l3-3 2.5 2.5 5-5"/></svg></span>
           <h3>Kare hızı denetimi</h3>
           <p>Ekranınla senkron ya da sınırsız. Sınırsızda tavanı ölçüme göre kendisi belirler.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🎨</div>
+        </article>
+
+        <article class="card reveal">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18c1.1 0 2-.9 2-2 0-1.4-1-1.7-1-2.7 0-.7.6-1.3 1.3-1.3H16a5 5 0 005-5c0-3.9-4-7-9-7z"/><circle cx="7.5" cy="11" r="1"/><circle cx="11" cy="7.5" r="1"/><circle cx="15.5" cy="9" r="1"/></svg></span>
           <h3>Görünüm ayarları</h3>
-          <p>Top şekli ve rengi, saha renkleri, takım formaları, skorbord tasarımı — hepsi yalnızca sende.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🎯</div>
+          <p>Top şekli ve rengi, saha renkleri, takım formaları, skorbord tasarımı. Hepsi yalnızca sende.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"/></svg></span>
           <h3>Antrenman ve kayıt</h3>
           <p>Tek başına şut çalış, kendi sahanı yükle, maç kayıtlarını sonradan izle.</p>
-        </div>
-        <div class="card">
-          <div class="ico">☁️</div>
+        </article>
+
+        <article class="card reveal">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 000-8 6 6 0 00-11.6 2A3.5 3.5 0 007 18z"/></svg></span>
           <h3>Ayarların seninle gelir</h3>
-          <p>Hesap açarsan profillerin, tuş atamaların ve tercihlerin diğer bilgisayarında da hazır.</p>
-        </div>
+          <p>Hesap açarsan profillerin, tuş atamaların ve tercihlerin diğer bilgisayarında da hazır olur.</p>
+        </article>
       </div>
     </div>
   </section>
 
   <section id="kurulum">
-  <div class="wrap">
-    <p class="section-title">Başlangıç</p>
-    <h2>İndir ve oyna</h2>
-    <p class="lead">Haxora kurulum gerektirmez. Dosyayı indirip doğrudan çalıştırabilirsin.</p>
-
-    <ol class="steps">
-      <li><span class="n">1</span><div><b>Haxora.exe</b> dosyasını indir.</div></li>
-      <li><span class="n">2</span><div>Dosyayı aç ve Haxora'yı başlat.</div></li>
-      <li><span class="n">3</span><div>Oyuncu adını ve görünümünü seç. Hazırsın!</div></li>
-    </ol>
-
-    <div class="note">
-      <span>ℹ️</span>
+    <div class="wrap split">
       <div>
-        İlk açılışta Windows bir güvenlik bildirimi gösterebilir.
-        <b>Daha fazla bilgi → Yine de çalıştır</b> seçeneğiyle devam edebilirsin.
+        <p class="eyebrow reveal">Kurulum</p>
+        <h2 class="reveal">HaxBall client'ını üç adımda çalıştır</h2>
+        <p class="lead reveal">Haxora kurulum gerektirmez. Dosyayı indirip doğrudan çalıştırabilirsin.</p>
+
+        <ol class="steps">
+          <li class="reveal"><span class="n">1</span><div><b>Haxora.exe</b> dosyasını indir.</div></li>
+          <li class="reveal"><span class="n">2</span><div>Dosyayı aç ve Haxora'yı başlat.</div></li>
+          <li class="reveal"><span class="n">3</span><div>Oyuncu adını ve görünümünü seç. Hazırsın.</div></li>
+        </ol>
+      </div>
+
+      <div>
+        <div class="note reveal">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6h.01"/></svg>
+          <div>
+            İlk açılışta Windows bir güvenlik bildirimi gösterebilir.
+            <b>Daha fazla bilgi → Yine de çalıştır</b> ile devam edebilirsin.
+          </div>
+        </div>
+
+        <div class="note reveal">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.4"/><path d="M5 20v-1a4.5 4.5 0 014.5-4.5h5A4.5 4.5 0 0119 19v1"/></svg>
+          <div>
+            <b>Hesap açmak isteğe bağlıdır.</b>
+            Arkadaş listesi, özel mesajlaşma ve istatistik gibi çevrimiçi özellikleri kullanmak
+            istersen ücretsiz bir Haxora hesabı oluşturabilirsin.
+          </div>
+        </div>
+
+        <div class="note reveal">
+          <svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 11-6.2-8.6"/><path d="M21 4v5h-5"/></svg>
+          <div>
+            Yeni sürüm çıktığında Haxora seni uygulama içinde uyarır. Her sürüm GitHub'da
+            notlarıyla birlikte yayımlanır.
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="note">
-      <span>👤</span>
-      <div>
-        <b>Hesap açmak isteğe bağlıdır.</b>
-        Arkadaş listesi, özel mesajlaşma ve istatistikler gibi çevrimiçi özellikleri
-        kullanmak istersen ücretsiz bir Haxora hesabı oluşturabilirsin.
+  <section id="sss">
+    <div class="wrap">
+      <p class="eyebrow reveal">Sık sorulanlar</p>
+      <h2 class="reveal">Merak edilenler</h2>
+      <p class="lead reveal">Haxora hakkında en çok sorulan sorular ve kısa cevapları.</p>
+
+      <div class="faq">
+        <details class="reveal" open>
+          <summary>Haxora nedir?</summary>
+          <p>Haxora, HaxBall oynamak için kullanabileceğin bağımsız bir masaüstü client'tır. Oyunu tarayıcı yerine kendi istemcinden açar; arkadaş listesi, özel mesajlaşma, oda istatistikleri ve görünüm ayarları gibi ek özellikler getirir.</p>
+        </details>
+
+        <details class="reveal">
+          <summary>HaxBall client kurulumu nasıl yapılır?</summary>
+          <p>Haxora kurulum gerektirmez. GitHub sürüm sayfasından Haxora.exe dosyasını indirip çift tıklaman yeterlidir. İlk açılışta Windows güvenlik bildirimi çıkarsa "Daha fazla bilgi" ve ardından "Yine de çalıştır" seçeneğiyle devam edebilirsin.</p>
+        </details>
+
+        <details class="reveal">
+          <summary>Haxora ücretli mi?</summary>
+          <p>Hayır, Haxora tamamen ücretsizdir. Hesap açmak da isteğe bağlıdır; hesap yalnızca arkadaş listesi, özel mesajlaşma ve istatistik gibi çevrimiçi özellikler için gerekir.</p>
+        </details>
+
+        <details class="reveal">
+          <summary>Haxora oyunda avantaj sağlar mı?</summary>
+          <p>Hayır. Haxora bir hile aracı değildir. Oyunun fiziğine, kurallarına veya diğer oyuncuların deneyimine dokunmaz. Görünüm ayarları yalnızca senin ekranında geçerlidir.</p>
+        </details>
+
+        <details class="reveal">
+          <summary>Haxora hangi işletim sistemlerinde çalışır?</summary>
+          <p>Haxora şu anda Windows 64-bit sistemler için yayınlanmaktadır.</p>
+        </details>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section id="surum">
     <div class="wrap">
-      <p class="section-title">Sürüm notları</p>
-      <h2 id="notesTitle">Son sürüm alınıyor…</h2>
-      <p class="lead">Her sürümde neyin değiştiği burada. Liste GitHub'daki son yayından gelir.</p>
+      <p class="eyebrow reveal">Sürüm notları</p>
+      <h2 id="notesTitle" class="reveal">Son sürüm alınıyor…</h2>
+      <p class="lead reveal">Her sürümde neyin değiştiği burada. Liste GitHub'daki son yayından gelir.</p>
 
-      <div class="release">
+      <div class="release reveal">
         <div class="release-head">
           <strong id="releaseTag">—</strong>
           <span id="releaseDate"></span>
@@ -566,24 +824,21 @@ footer { padding: 34px 0 48px; border-top: 1px solid var(--border); }
   <div class="wrap">
     <div class="foot">
       <span class="who">Haxora · Created by nycrox</span>
-      <span class="discord">discord: nycrox</span>
+      <span class="chip">discord: nycrox</span>
       <span class="grow"></span>
       <a href="https://github.com/nycr0x/Haxora">GitHub</a>
     </div>
 
     <p class="disclaimer">
-      Haxora bağımsız bir projedir. HaxBall ile herhangi bir resmi bağı yoktur,
-      HaxBall tarafından desteklenmez ve onaylanmaz. "HaxBall" adı ve ilgili tüm
-      haklar sahiplerine aittir. Haxora yalnızca oyuna kendi istemcinden bağlanmanı
-      sağlar; oyunun kurallarını ya da diğer oyuncuların deneyimini değiştirmez.
+      Haxora bağımsız bir projedir. HaxBall ile herhangi bir resmi bağı yoktur, HaxBall
+      tarafından desteklenmez ve onaylanmaz. "HaxBall" adı ve ilgili tüm haklar sahiplerine
+      aittir. Haxora yalnızca oyuna kendi istemcinden bağlanmanı sağlar; oyunun kurallarını
+      ya da diğer oyuncuların deneyimini değiştirmez.
     </p>
   </div>
 </footer>
 
 <script>
-/* İndirme düğmesi ve sürüm notları GitHub'daki son yayından geliyor. Yeni sürüm
-   çıkarmak = GitHub'da Release yayınlamak; siteye hiç dokunmuyorsun.
-   İstemcinin güncelleme kontrolü de aynı ucu okuyor. */
 (function () {
   var REPO = "nycr0x/Haxora";
 
@@ -628,9 +883,8 @@ footer { padding: 34px 0 48px; border-top: 1px solid var(--border); }
       notesTitle.textContent = "Haxora " + version;
       releaseTag.textContent = release.tag_name || "";
       releaseDate.textContent = published;
+      document.title = "Haxora " + version + " — Next-Gen HaxBall Client | Ücretsiz Masaüstü İstemci";
 
-      /* Sürüm notundaki "[zorunlu]" işareti istemcinin güncelleme şeridi için;
-         ziyaretçiye gösterilmez. */
       var body = String(release.body || "").replace(/\[zorunlu\]/gi, "").trim();
       notes.textContent = body || "Bu sürüm için not yazılmamış.";
     })
@@ -639,6 +893,41 @@ footer { padding: 34px 0 48px; border-top: 1px solid var(--border); }
       notesTitle.textContent = "Sürüm notları";
       notes.textContent = "Notlara GitHub'daki sürüm sayfasından bakabilirsin. (" + error.message + ")";
     });
+})();
+
+(function () {
+  var topbar = document.getElementById("topbar");
+  var ticking = false;
+
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function () {
+      topbar.classList.toggle("stuck", window.scrollY > 12);
+      ticking = false;
+    });
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
+
+(function () {
+  var items = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) {
+    for (var i = 0; i < items.length; i++) items[i].classList.add("in");
+    return;
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry, index) {
+      if (!entry.isIntersecting) return;
+      setTimeout(function () { entry.target.classList.add("in"); }, Math.min(index * 50, 240));
+      observer.unobserve(entry.target);
+    });
+  }, { rootMargin: "0px 0px -10% 0px", threshold: 0.1 });
+
+  items.forEach(function (item) { observer.observe(item); });
 })();
 </script>
 
