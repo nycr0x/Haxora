@@ -11,7 +11,7 @@ Yüksek FPS, arkadaş listesi, susturma, tema ve fazlası — kurulum yok, tek d
 
 <p>
 <a href="https://github.com/nycr0x/Haxora/releases/latest"><img src="https://img.shields.io/github/v/release/nycr0x/Haxora?label=s%C3%BCr%C3%BCm&color=4f8fbd&style=for-the-badge" alt="Sürüm" /></a>
-<a href="https://github.com/nycr0x/Haxora/releases"><img src="https://img.shields.io/github/downloads/nycr0x/Haxora/total?label=indirme&color=4f8fbd&style=for-the-badge" alt="İndirme" /></a>
+<a href="https://github.com/nycr0x/Haxora/releases"><img src="[https://](https://nycr0x.github.io/Haxora/)" alt="İndirme" /></a>
 <img src="https://img.shields.io/badge/platform-Windows-4f8fbd?style=for-the-badge" alt="Platform" />
 <a href="https://github.com/nycr0x/Haxora/blob/main/LICENSE"><img src="https://img.shields.io/badge/lisans-MIT-4f8fbd?style=for-the-badge" alt="Lisans" /></a>
 </p>
