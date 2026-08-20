@@ -38,7 +38,6 @@ Yüksek FPS, arkadaş listesi, susturma, tema ve fazlası — kurulum yok, tek d
 | 😀 **Avatar tepkileri** | Bir tuşa emoji ata, bastığın sürece avatarın o olsun. |
 | 🎨 **Tema ve görünüm** | Renk, top görünümü, gol efektleri, tuş atamaları. |
 | 🎯 **Antrenman modu** | Tek başına şut ve pas çalış. |
-| 🎬 **Maç kaydı** | Maçı kaydet, sonra izle. |
 | ⭐ **Favori odalar** | Sık girdiğin odalar ve oda geçmişi elinin altında. |
 
 ## Kurulum
