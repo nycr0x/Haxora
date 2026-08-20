@@ -89,11 +89,10 @@ Sorun bildirirken şunları eklersen çok daha hızlı çözülür:
 <div align="center">
 <sub>
 
-Haxora bağımsız bir projedir, HaxBall ile resmî bir bağı yoktur.
-[node-haxball](https://github.com/wxyz-abcd/node-haxball) üzerine kurulu · MIT lisansı
+Haxora bağımsız bir projedir ve HaxBall ile resmî bir bağı yoktur.  
+Built with [node-haxball](https://github.com/wxyz-abcd/node-haxball), licensed under the MIT License.
 
-A modern Windows desktop client for HaxBall built on [node-haxball](https://github.com/wxyz-abcd/node-haxball) —
+A modern Windows desktop client for HaxBall —
 [Haxora](https://github.com/nycr0x/Haxora) by [nycr0x](https://github.com/nycr0x)
-
 </sub>
 </div>
