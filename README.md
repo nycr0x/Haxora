@@ -83,15 +83,13 @@ Sorun bildirirken şunları eklersen çok daha hızlı çözülür:
 - Ne yaptığında oluyor (adım adım)
 - Varsa ekran görüntüsü
 
+
 ---
 
 <div align="center">
 <sub>
-
-Haxora bağımsız bir projedir ve HaxBall ile resmî bir bağı yoktur.  
-Built with [node-haxball](https://github.com/wxyz-abcd/node-haxball), licensed under the MIT License.
-
-A modern Windows desktop client for HaxBall —
-[Haxora](https://github.com/nycr0x/Haxora) by [nycr0x](https://github.com/nycr0x)
+Haxora bağımsız bir projedir ve HaxBall ile resmî bir bağı yoktur.<br/>
+Built with <a href="https://github.com/wxyz-abcd/node-haxball">node-haxball</a>, licensed under the MIT License.<br/>
+A modern Windows desktop client for HaxBall — <a href="https://github.com/nycr0x/Haxora">Haxora</a> by <a href="https://github.com/nycr0x">nycr0x</a>
 </sub>
 </div>
