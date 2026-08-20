@@ -39,6 +39,7 @@ Yüksek FPS, arkadaş listesi, susturma, tema ve fazlası — kurulum yok, tek d
 | 🎨 **Tema ve görünüm** | Renk, top görünümü, gol efektleri, tuş atamaları. |
 | 🎯 **Antrenman modu** | Tek başına şut ve pas çalış. |
 | ⭐ **Favori odalar** | Sık girdiğin odalar ve oda geçmişi elinin altında. |
+| 🧾 **İstatistikler** | Haxora üyeliği ile arkadaşlarının ve kendinin odalardaki performansını gör. |
 
 ## Kurulum
 
