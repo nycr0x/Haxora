@@ -53,6 +53,7 @@ Bir şey çalışmıyorsa ya da fikrin varsa → [issue aç](https://github.com/
 
 Haxora bağımsız bir projedir, HaxBall ile resmi bir bağı yoktur.
 [node-haxball](https://github.com/wxyz-abcd/node-haxball) üzerine kurulu · MIT
-
+------
+- A modern Windows desktop client for HaxBall using [node-haxball](https://github.com/wxyz-abcd/node-haxball), [Haxora](https://github.com/nycr0x/Haxora) by [nycr0x](https://github.com/nycr0x)
 </sub>
 </div>
