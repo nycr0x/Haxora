@@ -55,13 +55,6 @@ Yüksek FPS, arkadaş listesi, susturma, tema ve fazlası — kurulum yok, tek d
 ## Sık sorulanlar
 
 <details>
-<summary><b>Hesabım banlanır mı?</b></summary>
-
-Haxora resmî HaxBall istemcisinin yerine geçen bağımsız bir istemcidir ve [node-haxball](https://github.com/wxyz-abcd/node-haxball) üzerine kuruludur. Kullanım tamamen sana aittir.
-
-</details>
-
-<details>
 <summary><b>Susturma karşı tarafı etkiler mi?</b></summary>
 
 Hayır. Susturma sadece senin ekranında geçerlidir, diğer oyuncular susturduğun kişiyi görmeye devam eder.
