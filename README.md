@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://nycr0x.github.io/Haxora/site/Haxora_Icon.png" width="110" alt="Haxora" />
+<img src="https://nycr0x.github.io/Haxora/docs/site/Haxora_Icon.png" width="110" alt="Haxora" />
 
 <h1>Haxora</h1>
 
