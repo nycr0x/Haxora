@@ -10,17 +10,17 @@ Yüksek FPS, arkadaş listesi, susturma, tema ve fazlası
 </p>
 
 <p>
-<a href="https://github.com/nycr0x/Haxora/releases/latest"><img src="https://img.shields.io/github/v/release/nycr0x/Haxora?label=s%C3%BCr%C3%BCm&color=4f8fbd&style=for-the-badge" alt="Sürüm" /></a>
-<a href="https://nycr0x.github.io/Haxora/"><img src="https://img.shields.io/github/downloads/nycr0x/Haxora/total?label=indirme&color=4f8fbd&style=for-the-badge" alt="İndirme" /></a>
+<a href="https://github.com/nycr0x/Haxora/releases/latest"><img src="https://img.shields.io/github/v/release/nycr0x/Haxora-haxball-client?label=s%C3%BCr%C3%BCm&color=4f8fbd&style=for-the-badge" alt="Sürüm" /></a>
+<a href="https://nycr0x.github.io/Haxora/"><img src="https://img.shields.io/github/downloads/nycr0x/Haxora-haxball-client/total?label=indirme&color=4f8fbd&style=for-the-badge" alt="İndirme" /></a>
 <img src="https://img.shields.io/badge/platform-Windows-4f8fbd?style=for-the-badge" alt="Platform" />
 </p>
 
 <p>
 <a href="https://github.com/nycr0x/Haxora/releases/latest"><b>⬇ İNDİR</b></a>
 &nbsp;·&nbsp;
-<a href="https://nycr0x.github.io/Haxora/"><b>🌐 Web sitesi</b></a>
+<a href="https://nycr0x.github.io/Haxora-haxball-client/"><b>🌐 Web sitesi</b></a>
 &nbsp;·&nbsp;
-<a href="https://github.com/nycr0x/Haxora/issues"><b>🐞 Sorun bildir</b></a>
+<a href="https://github.com/nycr0x/Haxora-haxball-client/issues"><b>🐞 Sorun bildir</b></a>
 </p>
 
 </div>
