@@ -6,7 +6,7 @@
 
 <p>
 <b>HaxBall için masaüstü istemcisi</b><br/>
-Yüksek FPS, arkadaş listesi, susturma, tema ve fazlası — kurulum yok, tek dosya.
+Yüksek FPS, arkadaş listesi, susturma, tema ve fazlası
 </p>
 
 <p>
