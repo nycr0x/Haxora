@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://nycr0x.github.io/Haxora/site/Haxora_Icon.png" width="110" alt="Haxora" />
+<img src="https://nycr0x.github.io/Haxora-haxball-client/site/Haxora_Icon.png" width="110" alt="Haxora" />
 
 # Haxora
 
@@ -8,10 +8,10 @@
 
 [English](README.md) · **Türkçe**
 
-[![Sürüm](https://img.shields.io/github/v/release/nycr0x/Haxora?label=s%C3%BCr%C3%BCm&color=4f8fbd&style=for-the-badge)](https://github.com/nycr0x/Haxora/releases/latest)
-[![İndirme](https://img.shields.io/github/downloads/nycr0x/Haxora/total?label=indirme&color=4f8fbd&style=for-the-badge)](https://github.com/nycr0x/Haxora/releases)
+[![Sürüm](https://img.shields.io/github/v/release/nycr0x/Haxora-haxball-client?label=s%C3%BCr%C3%BCm&color=4f8fbd&style=for-the-badge)](https://github.com/nycr0x/Haxora-haxball-client/releases/latest)
+[![İndirme](https://img.shields.io/github/downloads/nycr0x/Haxora-haxball-client/total?label=indirme&color=4f8fbd&style=for-the-badge)](https://github.com/nycr0x/Haxora-haxball-client/releases)
 
-### [⬇ İNDİR](https://github.com/nycr0x/Haxora/releases/latest) · [🌐 haxora sitesi](https://nycr0x.github.io/Haxora/)
+### [⬇ İNDİR](https://github.com/nycr0x/Haxora-haxball-client/releases/latest) · [🌐 haxora sitesi](https://nycr0x.github.io/Haxora-haxball-client/)
 
 </div>
 
@@ -45,7 +45,7 @@ Tarayıcıda takılan oyun burada takılmıyor. Haxora, HaxBall'ı kendi pencere
 
 ## Kurulum
 
-**1.** [`Haxora.exe`](https://github.com/nycr0x/Haxora/releases/latest) indir
+**1.** [`Haxora.exe`](https://github.com/nycr0x/Haxora-haxball-client/releases/latest) indir
 **2.** Çift tıkla. Bu kadar — kurulum yok.
 
 > Windows "bilgisayarınızı korudu" derse **Ek bilgi → Yine de çalıştır** de. Program imzalı olmadığı için çıkıyor, her yeni programda olur.
@@ -62,7 +62,7 @@ Değişiklik anında uygulanır, yeniden başlatmaya gerek yok.
 
 ## Sorun mu var?
 
-Bir şey çalışmıyorsa ya da fikrin varsa → [issue aç](https://github.com/nycr0x/Haxora/issues)
+Bir şey çalışmıyorsa ya da fikrin varsa → [issue aç](https://github.com/nycr0x/Haxora-haxball-client/issues)
 
 ---
 

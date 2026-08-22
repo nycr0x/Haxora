@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://nycr0x.github.io/Haxora/site/Haxora_Icon.png" width="110" alt="Haxora" />
+<img src="https://nycr0x.github.io/Haxora-haxball-client/site/Haxora_Icon.png" width="110" alt="Haxora" />
 
 # Haxora
 
@@ -8,10 +8,10 @@
 
 **English** · [Türkçe](README.tr.md)
 
-[![Version](https://img.shields.io/github/v/release/nycr0x/Haxora?label=version&color=4f8fbd&style=for-the-badge)](https://github.com/nycr0x/Haxora/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/nycr0x/Haxora/total?label=downloads&color=4f8fbd&style=for-the-badge)](https://github.com/nycr0x/Haxora/releases)
+[![Version](https://img.shields.io/github/v/release/nycr0x/Haxora-haxball-client?label=version&color=4f8fbd&style=for-the-badge)](https://github.com/nycr0x/Haxora-haxball-client/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/nycr0x/Haxora-haxball-client/total?label=downloads&color=4f8fbd&style=for-the-badge)](https://github.com/nycr0x/Haxora-haxball-client/releases)
 
-### [⬇ DOWNLOAD](https://github.com/nycr0x/Haxora/releases/latest) · [🌐 haxora site](https://nycr0x.github.io/Haxora/)
+### [⬇ DOWNLOAD](https://github.com/nycr0x/Haxora-haxball-client/releases/latest) · [🌐 haxora site](https://nycr0x.github.io/Haxora-haxball-client/)
 
 </div>
 
@@ -45,7 +45,7 @@ The game that stutters in your browser doesn't stutter here. Haxora opens HaxBal
 
 ## Install
 
-**1.** Download [`Haxora.exe`](https://github.com/nycr0x/Haxora/releases/latest)
+**1.** Download [`Haxora.exe`](https://github.com/nycr0x/Haxora-haxball-client/releases/latest)
 **2.** Double-click it. That's it — there is no installer.
 
 > If Windows says it "protected your PC", choose **More info → Run anyway**. It shows up because the program isn't code-signed; every new program gets this.
@@ -62,7 +62,7 @@ The change applies immediately; nothing needs restarting.
 
 ## Something wrong?
 
-If something doesn't work, or you have an idea → [open an issue](https://github.com/nycr0x/Haxora/issues)
+If something doesn't work, or you have an idea → [open an issue](https://github.com/nycr0x/Haxora-haxball-client/issues)
 
 ---
 
