@@ -1,95 +1,76 @@
 <div align="center">
 
-<img src="https://nycr0x.github.io/Haxora-haxball-client/site/Haxora_Icon.png" width="110" alt="Haxora" />
+<img src="https://nycr0x.github.io/Haxora/site/Haxora_Icon.png" width="110" alt="Haxora" />
 
-<h1>Haxora</h1>
+# Haxora
 
-<p>
-<b>HaxBall için masaüstü istemcisi</b><br/>
-Yüksek FPS, arkadaş listesi, susturma, tema ve fazlası
-</p>
+**A desktop client for HaxBall**
 
-<p>
-<a href="https://github.com/nycr0x/Haxora/releases/latest"><img src="https://img.shields.io/github/v/release/nycr0x/Haxora-haxball-client?label=s%C3%BCr%C3%BCm&color=4f8fbd&style=for-the-badge" alt="Sürüm" /></a>
-<a href="https://nycr0x.github.io/Haxora/"><img src="https://img.shields.io/github/downloads/nycr0x/Haxora-haxball-client/total?label=indirme&color=4f8fbd&style=for-the-badge" alt="İndirme" /></a>
-<img src="https://img.shields.io/badge/platform-Windows-4f8fbd?style=for-the-badge" alt="Platform" />
-</p>
+**English** · [Türkçe](README.tr.md)
 
-<p>
-<a href="https://github.com/nycr0x/Haxora/releases/latest"><b>⬇ İNDİR</b></a>
-&nbsp;·&nbsp;
-<a href="https://nycr0x.github.io/Haxora-haxball-client/"><b>🌐 Web sitesi</b></a>
-&nbsp;·&nbsp;
-<a href="https://github.com/nycr0x/Haxora-haxball-client/issues"><b>🐞 Sorun bildir</b></a>
-</p>
+[![Version](https://img.shields.io/github/v/release/nycr0x/Haxora?label=version&color=4f8fbd&style=for-the-badge)](https://github.com/nycr0x/Haxora/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/nycr0x/Haxora/total?label=downloads&color=4f8fbd&style=for-the-badge)](https://github.com/nycr0x/Haxora/releases)
+
+### [⬇ DOWNLOAD](https://github.com/nycr0x/Haxora/releases/latest) · [🌐 haxora site](https://nycr0x.github.io/Haxora/)
 
 </div>
 
 ---
 
-## Neler var
+The game that stutters in your browser doesn't stutter here. Haxora opens HaxBall in a window of its own — higher FPS, less delay, and a pile of things the browser never gave you.
 
-| | |
-| :-- | :-- |
-| ⚡ **Yüksek FPS** | Kare hızı sınırını kaldır. Arka plana alınca oyun yavaşlamaz. |
-| 👥 **Arkadaş listesi & DM** | Kim online görürsün, oyunun içinden yazışırsın. |
-| 🔇 **Susturma** | Sinir olduğun adamı sadece kendi ekranında susturursun. Bot üzerinden yazan odalarda da çalışır. |
-| 😀 **Avatar tepkileri** | Bir tuşa emoji ata, bastığın sürece avatarın o olsun. |
-| 🎨 **Tema ve görünüm** | Renk, top görünümü, gol efektleri, tuş atamaları. |
-| 🎯 **Antrenman modu** | Tek başına şut ve pas çalış. |
-| ⭐ **Favori odalar** | Sık girdiğin odalar ve oda geçmişi elinin altında. |
-| 🧾 **İstatistikler** | Haxora üyeliği ile arkadaşlarının ve kendinin odalardaki performansını gör. |
+## What's inside
 
-## Kurulum
+🌍 **English and Turkish** — pick your language on the first-run screen, or switch any time from the top bar and from Settings
 
-**1.** [`Haxora.exe`](https://github.com/nycr0x/Haxora/releases/latest) dosyasını indir
-**2.** Çift tıkla. Bu kadar — kurulum yok, yönetici izni yok.
+⚡ **High FPS** — lift the frame rate cap; the game doesn't slow down when it goes to the background
 
-> [!NOTE]
-> Windows **"bilgisayarınızı korudu"** derse → **Ek bilgi** → **Yine de çalıştır**.
-> Program imzalı olmadığı için çıkıyor, imzasız her programda olur.
+👥 **Friends and private messages** — see who's online and message them without leaving the match
 
-**Gereken:** Windows 10 / 11 (64-bit)
+💬 **Private message notifications** — when someone messages you mid-match, the sender and the message show up in a notification that never covers the pitch. Position and prominence are both up to you
 
-## Sık sorulanlar
+🔐 **Sign in from anywhere** — create your Haxora account or sign in from the lobby *and* from inside a match
 
-<details>
-<summary><b>Susturma karşı tarafı etkiler mi?</b></summary>
+🔇 **Muting** — silence the guy getting on your nerves, on your screen only. Works in rooms that relay chat through a bot too
 
-Hayır. Susturma sadece senin ekranında geçerlidir, diğer oyuncular susturduğun kişiyi görmeye devam eder.
+😀 **Avatar reactions** — bind an emoji to a key; your avatar becomes that emoji while you hold it
 
-</details>
+🎨 **Themes and looks** — accent colour, ball skin, goal effects, key bindings
 
-<details>
-<summary><b>Ayarlarım nerede tutuluyor?</b></summary>
+🎯 **Training mode** — practise shooting and passing on your own
 
-Tema, tuş atamaları, favori odalar ve arkadaş listesi yerel olarak saklanır; program taşındığında ayarların korunur.
+🎬 **Match recording** — record a match and watch it back later
 
-</details>
+⭐ **Favourite rooms** — the rooms you play in most, plus your room history, always at hand
 
-<details>
-<summary><b>Mac / Linux sürümü var mı?</b></summary>
+## Install
 
-Şu an sadece Windows destekleniyor.
+**1.** Download [`Haxora.exe`](https://github.com/nycr0x/Haxora/releases/latest)
+**2.** Double-click it. That's it — there is no installer.
 
-</details>
+> If Windows says it "protected your PC", choose **More info → Run anyway**. It shows up because the program isn't code-signed; every new program gets this.
 
-## Katkı ve geri bildirim
+## Changing the language
 
-Bir şey çalışmıyorsa ya da fikrin varsa → **[issue aç](https://github.com/nycr0x/Haxora/issues)**
+The interface ships in **Turkish and English**. Three ways to change it:
 
-Sorun bildirirken şunları eklersen çok daha hızlı çözülür:
-- Haxora sürümü
-- Ne yaptığında oluyor (adım adım)
-- Varsa ekran görüntüsü
+- **First run** — the language is the first choice on the welcome screen.
+- **Main menu** — the `TR` / `EN` pill in the top bar switches instantly.
+- **Settings** — *Settings → General → Language*, both in the lobby and during a match.
 
+The change applies immediately; nothing needs restarting.
+
+## Something wrong?
+
+If something doesn't work, or you have an idea → [open an issue](https://github.com/nycr0x/Haxora/issues)
 
 ---
 
 <div align="center">
 <sub>
-Haxora bağımsız bir projedir ve HaxBall ile resmî bir bağı yoktur.<br/>
-Built with <a href="https://github.com/wxyz-abcd/node-haxball">node-haxball</a>, licensed under the MIT License.<br/>
-A modern Windows desktop client for HaxBall — <a href="https://github.com/nycr0x/Haxora">Haxora</a> by <a href="https://github.com/nycr0x">nycr0x</a>
+
+Haxora is an independent project with no official affiliation to HaxBall.
+Built on [node-haxball](https://github.com/wxyz-abcd/node-haxball) · MIT
+
 </sub>
 </div>
