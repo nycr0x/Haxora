@@ -2,9 +2,9 @@
 
 <img src="https://nycr0x.github.io/Haxora-haxball-client/site/Haxora_Icon.png" width="110" alt="Haxora" />
 
-# Haxora
+# Haxora — HaxBall Desktop Client
 
-**A desktop client for HaxBall**
+Haxora is a next-generation desktop client for HaxBall.
 
 **English** · [Türkçe](README.tr.md)
 
