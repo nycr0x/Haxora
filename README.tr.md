@@ -35,7 +35,15 @@ Tarayıcıda takılan oyun burada takılmıyor. Haxora, HaxBall'ı kendi pencere
 
 😀 **Avatar tepkileri** — bir tuşa emoji atarsın, bastığın sürece avatarın o olur
 
-🎨 **Tema ve görünüm** — renk, top görünümü, gol efektleri, tuş atamaları
+🎨 **Tema ve görünüm** — renk, top görünümü, skor tabelası, tuş atamaları
+
+⚽ **Gol efektleri** — attığın golle yediğin golün sahadaki görsel efekti ayrı; ikisine ayrı efekt seç, istemezsen kapat
+
+📤 **Ayar paylaşımı** — tema, görünüm ve tuş atamalarını koda çevir, arkadaşına yolla; sana gelen kodu yapıştır, onun düzeni sende açılsın
+
+🎵 **Spotify kontrolü** — maçtan çıkmadan şarkıyı başlat, duraklat, geç. Alt-tab yok, kaçan top yok
+
+🎮 **Discord Rich Presence** — sen oynarken Discord profilinde Haxora'da olduğun görünür
 
 🎯 **Antrenman modu** — tek başına şut ve pas çalış
 
