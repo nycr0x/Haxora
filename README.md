@@ -35,7 +35,15 @@ The game that stutters in your browser doesn't stutter here. Haxora opens HaxBal
 
 😀 **Avatar reactions** — bind an emoji to a key; your avatar becomes that emoji while you hold it
 
-🎨 **Themes and looks** — accent colour, ball skin, goal effects, key bindings
+🎨 **Themes and looks** — accent colour, ball skin, scoreboard, key bindings
+
+⚽ **Goal effects** — scoring and conceding get their own visual effect on the pitch; pick a different one for each, or turn them off
+
+📤 **Share your settings** — turn your theme, looks and key bindings into a code, send it to a friend; paste a code you receive and their setup loads on your side
+
+🎵 **Spotify controls** — play, pause and skip tracks without leaving the match; no alt-tab, no losing the ball
+
+🎮 **Discord Rich Presence** — your Discord profile shows that you're on Haxora while you play
 
 🎯 **Training mode** — practise shooting and passing on your own
 
